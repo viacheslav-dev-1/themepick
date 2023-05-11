@@ -39,7 +39,7 @@ const themes = {
 initThemes(themes, 'lightBlue')
 
 ```
-Themes object is a simple javascript object that contains default property and theme set. Themes object can not be empty and must contain at list one theme, otherwise an error will be thrown. Second argument - default theme that will be choosen automatically after application starts. If it is empty - first theme from the object will be picked.
+Themes object is a simple javascript object that contains theme set. Themes object can not be empty and must contain at list one theme, otherwise an error will be thrown. Second argument - default theme that will be choosen automatically after application starts. If it is empty - first theme from the object will be picked.
 
 <hr>
 <h4>addTheme</h4>
@@ -163,11 +163,11 @@ initThemes(themes, 'whiteIce', { key: 'selected', storage: 'sessionStorage' })
 ```
 
 <hr>
-Themepick fits perfectly to all types of front-end applications and static websites.<br>
+Themepick fits perfectly to all types of front-end applications and static websites.<br><br>
 Since the library uses a CSS Variables it may not work in older browsers.<br>
 Here the list of CSS Variables support:<br>
 https://caniuse.com/css-variables
 <br>
-If yoor application supports old browsers and you want to use this library, you can use pollyfills or ponyfills to fix this issue. Here some popular: <br>
+If your application supports old browsers and you want to use this library, you can use pollyfills or "ponyfills" to fix this issue. Here some popular: <br>
 https://jhildenbiddle.github.io/css-vars-ponyfill/#/ <br>
 https://github.com/nuxodin/ie11CustomProperties <br>
