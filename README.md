@@ -119,7 +119,7 @@ removeTheme('darkBlue')
 ```
 
 <hr>
-<h4>Common variables</h4>
+<h4>Shared variables</h4>
 Sometimes several themes can use the common css variables and there is not good to repeat them in every theme objects. Library provides a functionality to get rid of this. You should splecify a <b>ref</b> property as listed below:
 
 ```javascript
@@ -140,26 +140,26 @@ const themes = {
 
 initThemes(themes, 'whiteIce')
 ```
-The <b>ref</b> property means the reference to the common styles. References point theme manager to use common styles specified in the themes object. In the case above <b>whiteIcecream</b> and <b>whiteIce</b> themes use the common <b>whiteColors</b> theme.
+The <b>ref</b> property means the reference to the shared styles. References point theme manager to use shared styles specified in the themes object. In the case above <b>whiteIcecream</b> and <b>whiteIce</b> themes use the shared <b>whiteColors</b> theme.
 
 <hr>
-<h4>Using local storage / session storage to save themes</h4>
-To save themes to local or session storage you should specify the last argument of <b>initThemes</b> method.
+<h4>Using local storage / session storage to save selected theme</h4>
+To activate actual theme saving to local or session storage you should specify the last argument of <b>initThemes</b> method.
 For local storage:
 
 ```javascript
-initThemes(themes, 'whiteIce', 'localStorage')
+initThemes(themes, 'whiteIce', { key: 'selected', storage: 'localStorage' })
 ```
 For session storage:
 
 ```javascript
-initThemes(themes, 'whiteIce', 'sessionStorage')
+initThemes(themes, 'whiteIce', { key: 'selected', storage: 'sessionStorage' })
 ```
 
 <hr>
 Themepick fits perfectly to all types of front-end applications and static websites.<br>
 Since the library uses a CSS Variables it may not work in older browsers.<br>
-Here the list of CSS Variables support:
+Here the list of CSS Variables support:<br>
 https://caniuse.com/css-variables
 <br>
 If yoor application supports old browsers and you want to use this library, you can use pollyfills or ponyfills to fix this issue. Here some popular: <br>
