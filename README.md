@@ -53,7 +53,7 @@ addTheme('pinkIndigo', {
 
 <hr>
 <h4>applyTheme</h4>
-Applies choosen theme to application. Pass the theme name to the method that you specified when initializing the theme manager.
+Applies chosen theme to application. Pass the theme name to the method that you specified when initializing the theme manager.
 
 ```javascript
 import { applyTheme } from 'themespick'
@@ -62,7 +62,7 @@ import { applyTheme } from 'themespick'
 ```javascript
 applyTheme('darkBlue')
 ```
-If you don't want to initialize theme manager, you can provide theme object dirrectly to <b>applyTheme</b> method:
+If you don't want to initialize theme manager, you can provide theme object directly to <b>applyTheme</b> method:
 
 ```javascript
 applyTheme({
