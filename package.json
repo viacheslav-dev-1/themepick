@@ -1,6 +1,6 @@
 {
   "name": "themepick",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This library provides a mechanism of managing application themes",
   "main": "dist/themepick.cjs.js",
   "module": "dist/themepick.esm.js",

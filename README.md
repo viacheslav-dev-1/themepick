@@ -7,6 +7,12 @@ To install this library type the following command into the terminal:
 ```
 npm i themepick
 ```
+
+or using CDN
+
+```html
+<script src="https://unpkg.com/themepick"></script>
+```
 <h3>Hot to use Themepick</h3>
 
 Themepick provides several functions for theme management in the application.
