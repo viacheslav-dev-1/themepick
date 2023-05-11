@@ -1,0 +1,53 @@
+{
+  "name": "themepick",
+  "version": "1.0.0",
+  "description": "This library provides a mechanism of managing application themes",
+  "main": "dist/themepick.cjs.js",
+  "module": "dist/themepick.esm.js",
+  "browser": "dist/themepick.umd.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viacheslav-dev-1/themepick.git"
+  },
+  "keywords": [
+    "Theme",
+    "CSS Variable",
+    "Theme manager",
+    "UI Theming",
+    "JavaScript"
+  ],
+  "author": " <bviacheslav.12@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/viacheslav-dev-1/themepick/issues"
+  },
+  "homepage": "https://github.com/viacheslav-dev-1/themepick#readme",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "browser": {
+        "import": "./dist/themepick.esm.js",
+        "require": "./dist/themepick.cjs.js"
+      },
+      "node": {
+        "require": "./dist/themepick.cjs.js"
+      },
+      "default": "./dist/themepick.esm.js"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "rollup": "^2.79.1"
+  }
+}
