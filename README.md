@@ -61,7 +61,7 @@ import { applyTheme } from 'themepick'
 ```javascript
 applyTheme('darkBlue')
 ```
-If you don't want to initialize theme manager, you can provide theme object dirrectly to applyTheme method:
+If you don't want to initialize theme manager, you can provide theme object dirrectly to <b>applyTheme</b> method:
 
 ```javascript
 applyTheme({
@@ -120,7 +120,7 @@ removeTheme('darkBlue')
 
 <hr>
 <h4>Common variables</h4>
-Sometimes several themes can use the common css variables and there is not good to repeat them in every theme objects. Library provides a functionality to get rid of this. You should splecify new field in the config object during the initialization as listed below:
+Sometimes several themes can use the common css variables and there is not good to repeat them in every theme objects. Library provides a functionality to get rid of this. You should splecify a <b>ref</b> property as listed below:
 
 ```javascript
 const themes = {
