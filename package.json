@@ -1,16 +1,16 @@
 {
-  "name": "themepick",
-  "version": "1.0.3",
+  "name": "themespick",
+  "version": "1.0.0",
   "description": "This library provides a mechanism of managing application themes",
-  "main": "dist/themepick.cjs.js",
-  "module": "dist/themepick.esm.js",
-  "browser": "dist/themepick.umd.js",
+  "main": "dist/themespick.cjs.js",
+  "module": "dist/themespick.esm.js",
+  "browser": "dist/themespick.umd.js",
   "scripts": {
     "build": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/viacheslav-dev-1/themepick.git"
+    "url": "git+https://github.com/viacheslav-dev-1/themespick.git"
   },
   "keywords": [
     "Theme",
@@ -22,9 +22,9 @@
   "author": " <bviacheslav.12@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/viacheslav-dev-1/themepick/issues"
+    "url": "https://github.com/viacheslav-dev-1/themespick/issues"
   },
-  "homepage": "https://github.com/viacheslav-dev-1/themepick#readme",
+  "homepage": "https://github.com/viacheslav-dev-1/themespick#readme",
   "files": [
     "dist",
     "src"
@@ -32,13 +32,13 @@
   "exports": {
     ".": {
       "browser": {
-        "import": "./dist/themepick.esm.js",
-        "require": "./dist/themepick.cjs.js"
+        "import": "./dist/themespick.esm.js",
+        "require": "./dist/themespick.cjs.js"
       },
       "node": {
-        "require": "./dist/themepick.cjs.js"
+        "require": "./dist/themespick.cjs.js"
       },
-      "default": "./dist/themepick.esm.js"
+      "default": "./dist/themespick.esm.js"
     }
   },
   "devDependencies": {

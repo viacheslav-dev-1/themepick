@@ -1,27 +1,22 @@
-# Themepick
-Themepick is based on CSS variables and provides a mechasinm of switching between different themes in the application.
+# Themespick
+Themespick is based on CSS variables and provides a mechasinm of switching between different themes in the application.
 
 <h3>Installation</h3>
 To install this library type the following command into the terminal:
 
 ```
-npm i themepick
+npm i themespick
 ```
 
-or using CDN
+<h3>Hot to use Themespick</h3>
 
-```html
-<script src="https://unpkg.com/themepick"></script>
-```
-<h3>Hot to use Themepick</h3>
-
-Themepick provides several functions for theme management in the application.
+Themespick provides several functions for theme management in the application.
 <hr>
 <h4>initThemes</h4>
 Inits the set of defined themes. It should be used at the start of application.
 
 ```javascript
-import { initThemes } from 'themepick'
+import { initThemes } from 'themespick'
 ```
 
 ```javascript
@@ -46,7 +41,7 @@ Themes object is a simple javascript object that contains theme set. Themes obje
 Provides the ability to dynamically add a new theme to existing ones. Theme name should be unique and theme object can not be empty, otherwise an error will be thrown.
 
 ```javascript
-import { addTheme } from 'themepick'
+import { addTheme } from 'themespick'
 ```
 
 ```javascript
@@ -61,7 +56,7 @@ addTheme('pinkIndigo', {
 Applies choosen theme to application. Pass the theme name to the method that you specified when initializing the theme manager.
 
 ```javascript
-import { applyTheme } from 'themepick'
+import { applyTheme } from 'themespick'
 ```
 
 ```javascript
@@ -81,7 +76,7 @@ applyTheme({
 Returns the theme object that was saved to theme manager while initialization
 
 ```javascript
-import { getTheme } from 'themepick'
+import { getTheme } from 'themespick'
 ```
 
 ```javascript
@@ -93,7 +88,7 @@ const themeObject = getTheme('darkBlue')
 Returns the current value of css variable by name
 
 ```javascript
-import { getVarValue } from 'themepick'
+import { getVarValue } from 'themespick'
 ```
 
 ```javascript
@@ -105,7 +100,7 @@ const bgColor = getVarValue('--main-background')
 Sets the value to css variable
 
 ```javascript
-import { setVarValue } from 'themepick'
+import { setVarValue } from 'themespick'
 ```
 
 ```javascript
@@ -117,7 +112,7 @@ const bgColor = setVarValue('--main-background', '#00ff00')
 Removes the specified theme
 
 ```javascript
-import { removeTheme } from 'themepick'
+import { removeTheme } from 'themespick'
 ```
 
 ```javascript
@@ -163,7 +158,7 @@ initThemes(themes, 'whiteIce', { key: 'selected', storage: 'sessionStorage' })
 ```
 
 <hr>
-Themepick fits perfectly to all types of front-end applications and static websites.<br><br>
+Themespick fits perfectly to all types of front-end applications.<br><br>
 Since the library uses a CSS Variables it may not work in older browsers.<br>
 Here the list of CSS Variables support:<br>
 https://caniuse.com/css-variables

@@ -8,7 +8,7 @@ export default [
     {
         input: "src/index.js",
         output: [
-            { name: "themepick", file: pkg.browser, format: "umd" },
+            { name: "themespick", file: pkg.browser, format: "umd" },
             { file: pkg.module, format: "es" }
         ],
         plugins: [

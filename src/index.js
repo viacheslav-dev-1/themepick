@@ -1,13 +1,3 @@
-if (typeof exports != "undefined") {
-    exports.initThemes = initThemes
-    exports.addTheme = addTheme
-    exports.applyTheme = applyTheme
-    exports.getTheme = getTheme
-    exports.getVarValue = getVarValue
-    exports.setVarValue = setVarValue
-    exports.removeTheme = removeTheme
-}
-
 /* PUBLIC */
 
 /**
@@ -16,7 +6,7 @@ if (typeof exports != "undefined") {
  * @param {string} defaultTheme Default theme name that will be choosen during initialization. If defaultTheme is undefined, theme manager will pick the first from themes object
  * @param { {key: string, storage: string}} saveOption If this parameter is not undefined - it's used to set applied theme name to the local or session storage
 */
-function initThemes(themesObject, defaultTheme, saveOption) {
+export function initThemes(themesObject, defaultTheme, saveOption) {
     if (themesObject === null || themesObject === undefined) {
         console.warn(`Themes object cannot be null or undefined and must contains at least one theme object`)
         return
@@ -35,7 +25,7 @@ function initThemes(themesObject, defaultTheme, saveOption) {
  * @param {string} name Theme name
  * @param {{ ref: string, cssVariableName: string }} themeObject Theme object with css variables
  */
-function addTheme(name, themeObject) {
+export function addTheme(name, themeObject) {
     if (isBlank(name)) {
         console.warn('Theme name cannot be empty')
         return
@@ -59,7 +49,7 @@ function addTheme(name, themeObject) {
  * Applies choosen theme to application.
  * @param {string | {ref: string, cssVariableName: string}} themeObjOrName Theme name or object with css variables
  */
-function applyTheme(themeObjOrName) {
+export function applyTheme(themeObjOrName) {
     if (themeObjOrName === undefined || themeObjOrName === null) {
         console.warn('Theme Object or Theme name cannot be null or undefined')
         return
@@ -104,7 +94,7 @@ function applyTheme(themeObjOrName) {
  * @param {string} name Theme name
  * @returns {{ref: string, cssVariableName: string}} Theme object
  */
-function getTheme(name) {
+export function getTheme(name) {
     if (isBlank(name)) {
         console.warn('Theme name cannot be empty')
         return
@@ -119,7 +109,7 @@ function getTheme(name) {
  * @param {string} name CSS Variable name
  * @returns {string} CSS Variable value
  */
-function getVarValue(name) {
+export function getVarValue(name) {
     if (isBlank(name)) {
         console.warn('CSS Variable name cannot be empty')
         return
@@ -134,7 +124,7 @@ function getVarValue(name) {
  * @param {string} name CSS Variable name
  * @param {string} value CSS Variable value
  */
-function setVarValue(name, value) {
+export function setVarValue(name, value) {
     if (isBlank(name)) {
         console.warn('CSS Variable name cannot be empty')
         return
@@ -153,7 +143,7 @@ function setVarValue(name, value) {
  * Removes the specified theme
  * @param {string} name Theme name
  */
-function removeTheme(name) {
+export function removeTheme(name) {
     if (isBlank(name)) {
         console.warn('Theme name cannot be empty')
         return
